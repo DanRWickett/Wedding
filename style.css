@@ -1,8 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Monotype Corsiva';
-    font-size: xx-large;
     background-color: #abbd77;
   }
   
@@ -27,16 +25,6 @@ body {
     background-color: #abbd77;
     color: black;
   }
-  
-  .topnav a.active {
-    background-color: #8A9A5B;
-    color: white;
-  }
-
-  .topnav a.active:hover {
-    background-color: #abbd77;
-    color: black;
-  }
 
   .vine {
     background-image: url('vine.png');
@@ -44,4 +32,42 @@ body {
     width: 750px;
     height: 100px;
     margin:auto;
+  }
+
+  hr.dashed {
+    border-top: 3px dashed lightgray;
+    border-bottom: 0px dashed lightgray;
+    width: 600px;
+  }
+
+  .text{
+    font-family: 'Monotype Corsiva';
+    font-size: xx-large;
+  }
+
+  .column {
+    float: left;
+  }
+  
+  .left, .right {
+    width: 30%;
+  }
+  
+  .middle {
+    width: 40%;
+  }
+
+  .row {
+    padding-top: 10px;
+  }
+
+  .page_title {
+    text-align: center;
+    font-family: 'Monotype Corsiva';
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
